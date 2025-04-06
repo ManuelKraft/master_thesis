@@ -1,0 +1,12 @@
+.*
+scripts/__pycache__/
+notes.txt
+scripts/tests.ipynb
+scripts/tests.py
+scripts/ohsome_log/
+results/wrong_deletions/data/catched_deletions.db
+results/spatial_distribution/data/spatial_distribution.db
+results/spatial_distribution/data/hex_11.gpkg
+results/spatial_distribution/data/hex_11_land.gpkg
+resources/tests/
+resources/boundaries/local_highlights/australia_trunk.gpkg
