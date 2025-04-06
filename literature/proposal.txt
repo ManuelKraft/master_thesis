@@ -1,0 +1,26 @@
+Liebe Studentinnen und Studenten,
+
+während der Forschung in der GIScience entstehen immer wieder neue Ideen für kleinere Forschungsprojekte die im Umfang einer Bachelor oder Masterarbeit bearbeitet werden können. Sollten Sie auf der Suche nach einer Abschlussarbeit sein, sprechen Sie Ihre Dozierenden gerne an! Folgendes Thema ist beispielsweise aktuell zu vergeben:
+
+OSM ist eine freie und offene Geodatenbank die von verschiedenen Beitragenden wie Freiwilligen, Firmen und Organisation unterhalten und gepflegt wird.  Diese online Communities bilden ein soziales Projekt bei dem diverse Sichtweisen, Anforderungen, Ansprüche und Kenntnisstände aufeinandertreffen. Seit 2007 ist zudem die komplette Geschichte aller Änderungen in der Datenbank verfügbar. Dies ermöglicht vielfältige Analysen zu Änderungen und Trends.
+Bei der Analyse der Daten wird häufig von Linus-Law ausgegangen. Demnach konvergiert eine Gruppe durch Zusammenarbeit zu einem gemeinsamen Ergebnis. Dieses weist der Annahme zufolge eine höhere Qualität auf, als die Ergebnisse, welche die einzelnen Beitragenden erreichen könnten.
+Ein häufig übersehener Teil der Analysen sind dabei Änderungen, die keine Konvergenz anstreben sondern einen radikalen Neuanfang: Löschungen und das Wiederherstellen früherer Zustände. Beispiele wären das Löschen falscher Daten oder das Annullieren von Vandalismus.
+Der Prozess um diese meist nur kurz sichtbaren Zustände zu extrahieren ist zu großen Teilen bereits verfügbar. In Ihrer Abschlussarbeit werden Sie sich mit dem resultierenden Datensatz befassen und diesen analysieren. Dabei können Sie die Fragestellungen nach Ihren Interessen formulieren. Beispiele wären
+    • Was sind die Gründe für Löschungen und Rückabwicklungen?
+    • Welche Objekte werden proportional häufig/selten gelöscht? Warum?
+    • An welchen Orten finden proportional viele Löschungen statt? Warum, womit hängt dies zusammen?
+    • Können Löschungen vorhergesagt werden, z.b. mit Hilfe von Maschinellem Lernen?
+Durch ein besseres Verständnis dieser speziellen Daten können die restlichen OSM Daten besser qualitativ bewertet und damit ihre Anwendbarkeit sichergestellt werden.
+
+
+
+
+
+Hallo Manuel,
+
+anbei ein paar Paper zu dem Umgang mit smll counts bei count data. Meza 
+ist etwas sehr technisch... Luc Anselin gibt einen guten Überblick
+
+Schöne Grüße
+
+Sven

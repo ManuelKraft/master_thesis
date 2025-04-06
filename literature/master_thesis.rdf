@@ -1,0 +1,785 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <rdf:Description rdf:about="https://hub.worldpop.org/geodata/summary?id=24777">
+        <z:itemType>dataset</z:itemType>
+        <dc:title>The spatial distribution of population in 2020</dc:title>
+        <dc:date>2020</dc:date>
+        <z:shortTitle>WorldPop</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://hub.worldpop.org/geodata/summary?id=24777</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-12-22</dcterms:dateSubmitted>
+        <dc:rights>Creative Commons Atrribution 4.0 International Licence</dc:rights>
+        <dc:identifier>DOI 10.5258/SOTON/WP00647</dc:identifier>
+        <z:medium>tiff</z:medium>
+    </rdf:Description>
+    <bib:Article rdf:about="#item_2">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>25</prism:volume>
+                <dc:title>Pattern Recognition Letters</dc:title>
+                <dc:identifier>DOI https://doi.org/10.1016/j.patrec.2004.06.006</dc:identifier>
+                <prism:number>14</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hung</foaf:surname>
+                        <foaf:givenName>Wen-Liang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Miin-Shen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Similarity measures of intuitionistic fuzzy sets based on Hausdorff distance</dc:title>
+        <dc:date>15/10/2004</dc:date>
+        <z:language>Englisch</z:language>
+        <dcterms:dateSubmitted>2025-01-05</dcterms:dateSubmitted>
+        <bib:pages>1603-1611</bib:pages>
+    </bib:Article>
+    <bib:Article rdf:about="#item_3">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>49</prism:volume>
+                <dc:title>Pure and Applied Mathematics</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nadler</foaf:surname>
+                        <foaf:givenName>Sam B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Hyperspaces of sets</dc:title>
+        <dc:date>1978</dc:date>
+    </bib:Article>
+    <bib:Article rdf:about="https://osteuropa.lpb-bw.de/bergkarabach-konflikt">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Newspaper>
+                <dc:title>Landeszentrale für politische Bildung Baden-Württemberg</dc:title>
+            </bib:Newspaper>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rogova</foaf:surname>
+                        <foaf:givenName>Vera</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dalalishvili</foaf:surname>
+                        <foaf:givenName>Tengiz</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Bergkarabach-Konflikt</dc:title>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://osteuropa.lpb-bw.de/bergkarabach-konflikt</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-16</dcterms:dateSubmitted>
+    </bib:Article>
+    <bib:Article rdf:about="#item_7">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>4</prism:volume>
+                <dc:title>Open Geospatial Data, Software and Standards</dc:title>
+                <dc:identifier>DOI https://doi.org/10.1186/s40965-019-0067-x</dc:identifier>
+                <prism:number>9</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Frassinelli</foaf:surname>
+                        <foaf:givenName>Francesco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Minghini</foaf:surname>
+                        <foaf:givenName>Marco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>OpenStreetMap history for intrinsic quality assessment: Is OSM up-to-date?</dc:title>
+        <dc:date>2019</dc:date>
+    </bib:Article>
+    <bib:Article rdf:about="#item_8">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>21</prism:volume>
+                <dc:title>Transactions in GIS</dc:title>
+                <dc:identifier>DOI https://doi.org/10.1111/tgis.12189</dc:identifier>
+                <prism:number>1</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Foody</foaf:surname>
+                        <foaf:givenName>Giles</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Touya</foaf:surname>
+                        <foaf:givenName>Guillaume</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Olteanu-Raimond</foaf:surname>
+                        <foaf:givenName>Ana-Maria</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hart</foaf:surname>
+                        <foaf:givenName>Glen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kellenberger</foaf:surname>
+                        <foaf:givenName>Tobias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>The Scale of VGI in Map Production: A Perspective on European National Mapping Agencies</dc:title>
+        <dc:date>2017</dc:date>
+        <bib:pages>74-90</bib:pages>
+    </bib:Article>
+    <bib:Document rdf:about="https://www.openstreetmap.org/copyright">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Openstreetmap</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>OpenStreetMap Contributors</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Copyright and Licence</dc:title>
+        <z:language>Englisch</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.openstreetmap.org/copyright</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-22</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="https://planet.openstreetmap.org/statistics/data_stats.html">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>OpenStreetMap stats</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>OpenStreetMap stats</dc:title>
+        <dc:date>22.01.2025</dc:date>
+        <z:language>Englisch</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://planet.openstreetmap.org/statistics/data_stats.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-22</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="https://www.openstreetmap.org/communities">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Communities</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>OpenStreetMap Contributors</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Communities</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.openstreetmap.org/communities</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-22</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Article rdf:about="#item_12">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>102</prism:volume>
+                <dc:title>Personality and Individual Differences</dc:title>
+                <dc:identifier>DOI https://doi.org/10.1016/j.paid.2016.06.069</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gignac</foaf:surname>
+                        <foaf:givenName>Gilles</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Szodorai</foaf:surname>
+                        <foaf:givenName>Eva</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Effect size guidelines for individual differences researchers</dc:title>
+        <bib:pages>74-78</bib:pages>
+    </bib:Article>
+    <bib:Book rdf:about="#item_13">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Routledge</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cohen</foaf:surname>
+                        <foaf:givenName>Jacob</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Statistical power analysis for the behavioral sciences</dc:title>
+        <dc:date>1988</dc:date>
+    </bib:Book>
+    <bib:Document rdf:about="https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54616/kaschmir/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+            <z:Website>
+               <dc:title>Bundeszentrale für politische Bildung</dc:title>
+            </z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Destradi</foaf:surname>
+                        <foaf:givenName>Sandra</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Kaschmir</dc:title>
+        <dc:date>05.09.2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54616/kaschmir/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Document>
+    <bib:Report rdf:about="https://www.kas.de/de/laenderberichte/detail/-/content/es-brodelt-im-himalaya">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Konrad Adenauer Stiftung</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lorenz</foaf:surname>
+                        <foaf:givenName>Felix</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Es brodelt im Himalaya</dc:title>
+        <dc:date>14.07.2023</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.kas.de/de/laenderberichte/detail/-/content/es-brodelt-im-himalaya</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
+    </bib:Report>
+    <bib:Article rdf:about="https://www.ipg-journal.de/regionen/asien/artikel/endloser-gipfelkampf-6603/">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Newspaper>
+                <dc:title>Journal für Internationale Politik und Gesellschaft</dc:title>
+            </bib:Newspaper>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wulf</foaf:surname>
+                        <foaf:givenName>Herbert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Endloser Gipfelkampf</dc:title>
+        <dc:date>27.03.2023</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ipg-journal.de/regionen/asien/artikel/endloser-gipfelkampf-6603/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
+    </bib:Article>
+    <bib:Article rdf:about="https://www.rnd.de/politik/was-ist-das-westjordanland-wem-gehoert-es-und-was-hat-es-mit-dem-nahostkonflikt-zu-tun-S6TZH3OKFVFCTNUICKFYP3IXJQ.html">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Newspaper>
+               <dc:title>RedaktionsNetzwerk Deutschland</dc:title>
+            </bib:Newspaper>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wittenberg</foaf:surname>
+                        <foaf:givenName>Lucie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Was ist das Westjordanland, und wem gehört es?</dc:title>
+        <dc:date>27.10.2023</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.rnd.de/politik/was-ist-das-westjordanland-wem-gehoert-es-und-was-hat-es-mit-dem-nahostkonflikt-zu-tun-S6TZH3OKFVFCTNUICKFYP3IXJQ.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
+    </bib:Article>
+    <bib:Article rdf:about="https://www.tagesschau.de/ausland/asien/israel-westjordanland-122.html">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Newspaper><dc:title>Tagesschau</dc:title></bib:Newspaper>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kitzler</foaf:surname>
+                        <foaf:givenName>Jan-Christoph</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>&quot;Atmosphäre der Angst&quot; im Westjordanland</dc:title>
+        <dc:date>19.03.2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tagesschau.de/ausland/asien/israel-westjordanland-122.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
+    </bib:Article>
+    <bib:Document rdf:about="https://www.auswaertiges-amt.de/de/reiseundsicherheit/palaestinensischegebietesicherheit-203674">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Auswärtiges Amt</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Palästinensiche Gebiete: Reise- und Sicherheitshinweise</dc:title>
+        <dc:date>02.02.2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.auswaertiges-amt.de/de/reiseundsicherheit/palaestinensischegebietesicherheit-203674</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Document>
+    <bib:Article rdf:about="https://www.bpb.de/themen/migration-integration/regionalprofile/329090/der-vergessene-konflikt-in-westsahara-und-seine-fluechtlinge/">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Newspaper>
+               <dc:title>Bundeszentrale für politische Bildung</dc:title>
+            </bib:Newspaper>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Azkue</foaf:surname>
+                        <foaf:givenName>Irantzu Mendia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Der vergessene Konflikt in Westsahara und seine Flüchtlinge</dc:title>
+        <dc:date>29.03.2021</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.bpb.de/themen/migration-integration/regionalprofile/329090/der-vergessene-konflikt-in-westsahara-und-seine-fluechtlinge/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
+    </bib:Article>
+    <bib:Article rdf:about="#item_22">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>206</prism:volume>
+                <dc:title>Ecological Modelling</dc:title>
+                <dc:identifier>DOI https://doi.org/10.1016/j.ecolmodel.2007.03.041</dc:identifier>
+                <prism:number>3-4</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Birch</foaf:surname>
+                        <foaf:givenName>Colin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oom</foaf:surname>
+                        <foaf:givenName>Sander</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jonathan</foaf:surname>
+                        <foaf:givenName>Beecham</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Rectangular and hexagonal grids used for observation, experiment and simulation in ecology</dc:title>
+        <dc:date>24.08.2007</dc:date>
+        <dcterms:dateSubmitted>2025-02-04</dcterms:dateSubmitted>
+        <bib:pages>347-359</bib:pages>
+    </bib:Article>
+    <bib:Data rdf:about="https://github.com/r-barnes/dggridR/">
+        <z:itemType>computerProgram</z:itemType>
+        <z:programmers>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barnes</foaf:surname>
+                        <foaf:givenName>Richard</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sahr</foaf:surname>
+                        <foaf:givenName>Kevin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:programmers>
+        <dc:title>dggridR: Discrete Global Grids for R</dc:title>
+        <dc:date>2017</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://github.com/r-barnes/dggridR/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:rights>doi:10.5281/zenodo.1322866</dc:rights>
+    </bib:Data>
+    <bib:Report rdf:about="#item_24">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>University of Illinois, Urbana-Champaign</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Anselin</foaf:surname>
+                        <foaf:givenName>Luc</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lozano</foaf:surname>
+                        <foaf:givenName>Nancy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Koschinsky</foaf:surname>
+                        <foaf:givenName>Julia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Rate Transformations and Smoothing</dc:title>
+        <dc:date>31.01.2006</dc:date>
+    </bib:Report>
+    <bib:Report rdf:about="http://www.rms.nsw.gov.au/documents/projects/key-build-programs/alpha-numeric/nsw-factsheet.pdf">
+        <z:itemType>report</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>Transport Roads &amp; Maritime Services. Government of New South Wales</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <dc:title>Road number and name changes in New South Wales</dc:title>
+        <dc:date>2012</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.rms.nsw.gov.au/documents/projects/key-build-programs/alpha-numeric/nsw-factsheet.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
+    </bib:Report>
+    <bib:Article rdf:about="#item_26">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>10</prism:volume>
+                <dc:title>IEEE Access</dc:title>
+                <dc:identifier>DOI 10.1109/ACCESS.2022.3197222</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Juhász</foaf:surname>
+                        <foaf:givenName>Levente</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mooney</foaf:surname>
+                        <foaf:givenName>Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>“I Think i Discovered a Military Base in the Middle of the Ocean”—Null Island, the Most Real of Fictional Places</dc:title>
+        <dc:date>2022</dc:date>
+        <bib:pages>84147-84165</bib:pages>
+    </bib:Article>
+    <rdf:Description rdf:about="https://wiki.openstreetmap.org/w/index.php?title=Map_features&amp;oldid=2804789">
+        <z:itemType>standard</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>OpenStreetMap Wiki</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>OpenStreetMap Wiki contributors</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Map features</dc:title>
+        <dc:date>2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://wiki.openstreetmap.org/w/index.php?title=Map_features&amp;oldid=2804789</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-10</dcterms:dateSubmitted>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://wiki.openstreetmap.org/w/index.php?title=Changelog&amp;oldid=2778521">
+        <z:itemType>standard</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>OpenStreetMap Wiki</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>OpenStreetMap Wiki contributors</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Changelog</dc:title>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://wiki.openstreetmap.org/w/index.php?title=Changelog&amp;oldid=2778521</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-10</dcterms:dateSubmitted>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://wiki.openstreetmap.org/w/index.php?title=Key:addr:*&amp;oldid=2795834">
+        <z:itemType>standard</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>OpenStreetMap Wiki</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>OpenStreetMap Wiki contributors</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Key:addr.*</dc:title>
+        <dc:date>2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://wiki.openstreetmap.org/w/index.php?title=Key:addr:*&amp;oldid=2795834</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-10</dcterms:dateSubmitted>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://wiki.openstreetmap.org/w/index.php?title=Relation&amp;oldid=2773710">
+        <z:itemType>standard</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>OpenStreetMap Wiki</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>OpenStreetMap Wiki contributors</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Relation</dc:title>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://wiki.openstreetmap.org/w/index.php?title=Relation&amp;oldid=2773710</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-10</dcterms:dateSubmitted>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://shapely.readthedocs.io/en/stable/reference/shapely.hausdorff_distance.html">
+        <z:itemType>standard</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Sean Gillies and Shapely contributors</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <prism:edition>2.0.7</prism:edition>
+        <dc:title>shapely.hausdorff_distance</dc:title>
+        <dc:date>2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://shapely.readthedocs.io/en/stable/reference/shapely.hausdorff_distance.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-10</dcterms:dateSubmitted>
+    </rdf:Description>
+    <bib:Article rdf:about="https://ijasre.net/index.php/ijasre/article/view/831/1567">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2454-8006"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Po</foaf:surname>
+                        <foaf:givenName>Daw Khin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Similarity Based Information Retrieval Using Levenshtein Distance Algorithm</dc:title>
+        <dc:date>2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ijasre.net/index.php/ijasre/article/view/831/1567</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-02-10</dcterms:dateSubmitted>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2454-8006">
+        <prism:volume>6</prism:volume>
+        <dc:title>International Journal of Advances in Scientific Research and Engineering(ijasre)</dc:title>
+        <dc:identifier>DOI 10.31695/IJASRE.2020.33780</dc:identifier>
+        <prism:number>4</prism:number>
+        <dc:identifier>ISSN 2454-8006</dc:identifier>
+    </bib:Journal>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>master_thesis</dc:title>
+        <dcterms:hasPart rdf:resource="https://hub.worldpop.org/geodata/summary?id=24777"/>
+        <dcterms:hasPart rdf:resource="#item_2"/>
+        <dcterms:hasPart rdf:resource="#item_3"/>
+        <dcterms:hasPart rdf:resource="https://osteuropa.lpb-bw.de/bergkarabach-konflikt"/>
+        <dcterms:hasPart rdf:resource="#item_7"/>
+        <dcterms:hasPart rdf:resource="#item_8"/>
+        <dcterms:hasPart rdf:resource="https://www.openstreetmap.org/copyright"/>
+        <dcterms:hasPart rdf:resource="https://planet.openstreetmap.org/statistics/data_stats.html"/>
+        <dcterms:hasPart rdf:resource="https://www.openstreetmap.org/communities"/>
+        <dcterms:hasPart rdf:resource="#item_12"/>
+        <dcterms:hasPart rdf:resource="#item_13"/>
+        <dcterms:hasPart rdf:resource="https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54616/kaschmir/"/>
+        <dcterms:hasPart rdf:resource="https://www.kas.de/de/laenderberichte/detail/-/content/es-brodelt-im-himalaya"/>
+        <dcterms:hasPart rdf:resource="https://www.ipg-journal.de/regionen/asien/artikel/endloser-gipfelkampf-6603/"/>
+        <dcterms:hasPart rdf:resource="https://www.rnd.de/politik/was-ist-das-westjordanland-wem-gehoert-es-und-was-hat-es-mit-dem-nahostkonflikt-zu-tun-S6TZH3OKFVFCTNUICKFYP3IXJQ.html"/>
+        <dcterms:hasPart rdf:resource="https://www.tagesschau.de/ausland/asien/israel-westjordanland-122.html"/>
+        <dcterms:hasPart rdf:resource="https://www.auswaertiges-amt.de/de/reiseundsicherheit/palaestinensischegebietesicherheit-203674"/>
+        <dcterms:hasPart rdf:resource="https://www.bpb.de/themen/migration-integration/regionalprofile/329090/der-vergessene-konflikt-in-westsahara-und-seine-fluechtlinge/"/>
+        <dcterms:hasPart rdf:resource="#item_22"/>
+        <dcterms:hasPart rdf:resource="https://github.com/r-barnes/dggridR/"/>
+        <dcterms:hasPart rdf:resource="#item_24"/>
+        <dcterms:hasPart rdf:resource="http://www.rms.nsw.gov.au/documents/projects/key-build-programs/alpha-numeric/nsw-factsheet.pdf"/>
+        <dcterms:hasPart rdf:resource="#item_26"/>
+        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Map_features&amp;oldid=2804789"/>
+        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Changelog&amp;oldid=2778521"/>
+        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Key:addr:*&amp;oldid=2795834"/>
+        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Relation&amp;oldid=2773710"/>
+        <dcterms:hasPart rdf:resource="https://shapely.readthedocs.io/en/stable/reference/shapely.hausdorff_distance.html"/>
+        <dcterms:hasPart rdf:resource="https://ijasre.net/index.php/ijasre/article/view/831/1567"/>
+    </z:Collection>
+</rdf:RDF>

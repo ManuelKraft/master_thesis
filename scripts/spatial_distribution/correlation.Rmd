@@ -1,0 +1,53 @@
+---
+title: "correlatioin"
+output: html_document
+---
+
+```{r}
+library(sf)
+library(ggplot2)
+
+dat <- st_read(dsn = "../../results/spatial_distribution/data/hex_11.gpkg")
+```
+
+
+```{r}
+dat_filtered <- subset(dat, count_visible > 20 & count_deletions > 10)
+cor <- cor(dat$count_visible, dat$count_deletions, method="pearson")
+
+p1 <- ggplot(data=dat_filtered, mapping=aes(x=count_visible, y=count_deletions)) +
+  scale_y_log10() +
+  scale_x_log10() +
+  xlab("Sichtbare Objekte pro Hexagon") +
+  ylab("Gelöschte Objekte pro Hexagon") +
+  labs(title="Korrelation zwischen Anzahl an Löschungen und Anzahl sichtbarer Objekte",
+       subtitle = paste0("Pearsons R ≈ ", round(cor, 2))) +
+  geom_point(size = 0.1) 
+p1
+#ggsave(filename = "../images/spatial_distribution/correlation.png", p1)
+```
+
+```{r}
+nPerm <- 10000
+correlations <- numeric(nPerm)
+for(i in 1:nPerm){
+  dat_subset <- dat[sample(nrow(dat), 100), ]
+  cor <- cor(dat_subset$count_deletions, dat_subset$count_visible, method = "pearson")
+  correlations[i] <- cor
+}
+```
+
+```{r}
+# Plot the histogram
+hist(correlations, 
+     breaks = 50, 
+     col = "skyblue", 
+     main = "Distribution of Pearson Correlations", 
+     xlab = "Correlation Coefficient", 
+     ylab = "Frequency", 
+     border = "white")
+
+# Add a vertical line for the mean correlation
+abline(v = mean(correlations), col = "red", lwd = 2, lty = 2)
+mean(correlations)
+```

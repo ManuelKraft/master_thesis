@@ -1,0 +1,268 @@
+---
+title: "tests"
+output: html_document
+---
+
+```{r}
+library(sf)
+library(MASS)
+library(ggplot2)
+
+dat_full <- st_read("../../results/spatial_distribution/data/hex_11_land.gpkg")
+dat_full <- st_make_valid(dat_full)
+```
+
+```{r}
+conflict_region_name <- "Karabach"
+conflict_region_name_os <- tolower(gsub(' ', '_', conflict_region_name))
+source_folder <- paste0("../../resources/boundaries/conflict_regions/", conflict_region_name_os)
+conflict_region <- st_read(paste0(source_folder,'/', conflict_region_name_os, '.gpkg'))
+conflict_region_surroundings <- st_read(
+  paste0(source_folder,'/', conflict_region_name_os, '_surroundings.gpkg'))
+conflict_regions <- st_read("../../resources/boundaries/conflict_regions/all.gpkg")
+if (conflict_region_name_os == "westbank"){
+  conflict_region_name <- "Westjordanland"
+}
+if (conflict_region_name_os == "transnistria"){
+  conflict_region_name <- "Transnistrien"
+}
+```
+
+```{r}
+conflict_region <- st_make_valid(conflict_region)
+conflict_region_surroundings <- st_make_valid(conflict_region_surroundings)
+conflict_regions <- st_make_valid(conflict_regions)
+
+dat_conflict_region <- subset(dat_full, sapply(st_intersects(dat_full, conflict_region), length) > 0)
+dat_conflict_region_surroundings <- subset(dat_full, 
+                                    sapply(st_intersects(dat_full, conflict_region_surroundings), length) > 0)
+dat_conflict_region_surroundings <- subset(dat_conflict_region_surroundings, 
+                                    sapply(st_equals(dat_conflict_region_surroundings,dat_conflict_region),length)==0)
+dat_world <- subset(dat_full, sapply(st_intersects(dat_full, conflict_regions), length) == 0)
+
+dat_conflict_region <- subset(dat_conflict_region, ratio_smoothed_primary != -999)
+dat_conflict_region_surroundings <- subset(dat_conflict_region_surroundings, ratio_smoothed_primary != -999)
+dat_world <- subset(dat_world, ratio_smoothed_primary != -999)
+```
+
+```{r}
+statistical_value <- "Mittelwert"
+comparing_region <- "Global"
+```
+
+```{r}
+data1 <- dat_conflict_region$ratio_smoothed_primary
+
+if (comparing_region == "Global"){
+  data2 <- dat_world$ratio_smoothed_primary
+}
+if (comparing_region == "Umland"){
+  data2 <- dat_conflict_region_surroundings$ratio_smoothed_primary
+}
+
+if (statistical_value == "Mittelwert"){
+  statistical_value_conflict_region <- round(mean(data1), 3)
+  statistical_value_comparing_region <- round(mean(data2), 3)
+  obsDiff <- mean(data1) - mean(data2)
+  lab_x = "Simulierte Differenz der Mittelwerte"
+}
+
+if (statistical_value == "Median"){
+  statistical_value_conflict_region <- round(median(data1), 3)
+  statistical_value_comparing_region <- round(median(data2), 3)
+  obsDiff <- median(data1) - median(data2)
+  lab_x = "Simulierte Differenz der Mediane"
+}
+
+nPerm <- 1000000
+simDiff <- numeric(nPerm)
+for(i in 1:nPerm){
+  idx1 <- sample(1:length(data2), size = length(data1))
+  all_data <- c(data1, data2[idx1])
+  n <- length(all_data)
+  idx2 <- sample(1:n, size = round(n / 2, 0))
+  if (statistical_value == "Mittelwert"){
+    simDiff[i] <-  mean(all_data[idx2]) - mean(all_data[-idx2])
+  }
+  if (statistical_value == "Median"){
+    simDiff[i] <-  median(all_data[idx2]) - median(all_data[-idx2])
+  }
+}
+
+allDiffs <- sort(c(simDiff, obsDiff))
+position <- which(allDiffs == obsDiff)
+p <- position / (nPerm +1)
+
+if (p < 0.5) {
+  null_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                            conflict_region_name, " nur zufällig kleiner")
+  alternative_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                                   conflict_region_name, " nicht zufällig kleiner")
+} else {
+  p <- 1-p
+  null_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                            conflict_region_name, " nur zufällig größer")
+  alternative_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                                   conflict_region_name, " nicht zufällig größer")
+}
+
+p_result <- paste0("p-Wert ≈ ", round(p, 3))
+if (p < 0.05) {
+  if (p < 1*10**-3){
+    p_result <- paste0("p-Wert < 1e-03")
+    }
+  result <- paste0(p_result, " < 0.05 --> Verwerfung der Nullhypothese") 
+} else{
+  result <- paste0(p_result, " > 0.05 --> Beibehaltung der Nullhypothese")
+}
+
+if (length(data2) > 10000){
+  comparing_region <- "Global"
+} else {
+  comparing_region <- "Umland"
+}
+
+lower_bound <- quantile(simDiff, 0.01, na.rm = TRUE)
+upper_bound <- quantile(simDiff, 0.99, na.rm = TRUE)
+
+if (obsDiff < lower_bound){lower_bound <- obsDiff}
+if (obsDiff > upper_bound){upper_bound <- obsDiff}
+
+fill_condition <- simDiff > obsDiff
+if (obsDiff < 0) {
+  fill_condition <- simDiff < obsDiff
+}
+
+ggplot(data.frame(simDiff), aes(x = simDiff)) +
+  geom_histogram(binwidth = (upper_bound - lower_bound) / 50, 
+                 aes(fill = fill_condition, 
+                     y = after_stat(count) / sum(after_stat(count))), 
+                 color = "black") +
+  scale_fill_manual(values = c("FALSE" = "blue", "TRUE" = "yellow")) +
+  xlim(lower_bound, upper_bound) +
+  labs(
+    x = lab_x,
+    y = "Relative Häufigkeit",
+    title = paste0(conflict_region_name, " vs. ", comparing_region),
+    subtitle = paste0(statistical_value, ' ', conflict_region_name, " ≈ ", statistical_value_conflict_region, ', ', 
+                      statistical_value, ' ', comparing_region, " ≈ ", statistical_value_comparing_region, 
+                      "\nDifferenz der beobachteten ", statistical_value, "e ≈ ", round(obsDiff, 3), 
+                      "\n\nPermutationstest\nNullhypothese: ", null_hypothesis,
+                      "\nAlternativhypothese: ", alternative_hypothesis,
+                      "\n\n", result)) +
+  geom_vline(xintercept = obsDiff, col = "red", lty = 2) +
+  annotate("text", x = obsDiff, y = -0.005, label = round(obsDiff, 3), col = "red") + 
+  theme(legend.position = "none")
+ggsave(filename = paste0("../../results/spatial_distribution/images/local/",conflict_region_name_os, 
+                         "/test_",tolower(comparing_region), "_", tolower(statistical_value), ".png"))
+```
+
+```{r}
+data1 <- dat_conflict_region
+if (comparing_region == "Global"){
+  data2 <- dat_world
+}
+if (comparing_region == "Umland"){
+  data2 <- dat_conflict_region_surroundings
+}
+
+if (statistical_value == "Mittelwert"){
+  statistical_value_conflict_region <- sum(data1$count_deletions_primary) / sum(data1$count_visible_primary)
+  statistical_value_comparing_region <- sum(data2$count_deletions_primary) / sum(data2$count_visible_primary)
+  obsDiff <- statistical_value_conflict_region - statistical_value_comparing_region
+  lab_x = "Simulierte Differenz der Mittelwerte"
+}
+
+if (statistical_value == "Median"){
+  statistical_value_conflict_region <- round(median(data1$ratio_smoothed_primary), 5)
+  statistical_value_comparing_region <- round(median(data2$ratio_smoothed_primary), 5)
+  obsDiff <- statistical_value_conflict_region - statistical_value_comparing_region
+  lab_x = "Simulierte Differenz der Mediane"
+}
+
+nPerm <- 3000
+simDiff <- numeric(nPerm)
+for(i in 1:nPerm){
+  idx1 <- sample(1:length(data2), size = length(data1))
+  all_data_ratio <- c(data1$ratio_smoothed_primary, data2$ratio_smoothes_primary[idx1])
+  all_data_deletions <- c(data1$count_deletions_primary, data2$count_deletions_primary[idx1])
+  all_data_visible <- c(data1$count_visible_primary, data2$count_visible_primary[idx1])
+  
+  n <- length(all_data_ratio)
+  idx2 <- sample(1:n, size = round(n / 2, 0))
+  if (statistical_value == "Mittelwert"){
+    mean1 <- sum(all_data_deletions[idx2]) / sum(all_data_visible[idx2])
+    mean2 <- sum(all_data_deletions[-idx2]) / sum(all_data_visible[-idx2])
+    simDiff[i] <-  mean1 - mean2
+  }
+  if (statistical_value == "Median"){
+    simDiff[i] <-  median(all_data_ratio[idx2]) - median(all_data_ratio[-idx2])
+  }
+}
+
+allDiffs <- sort(c(simDiff, obsDiff))
+position <- which(allDiffs == obsDiff)
+p <- position / (nPerm +1)
+
+if (p < 0.5) {
+  null_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                            conflict_region_name, " nur zufällig kleiner")
+  alternative_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                                   conflict_region_name, " nicht zufällig kleiner")
+} else {
+  p <- 1-p
+  null_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                            conflict_region_name, " nur zufällig größer")
+  alternative_hypothesis <- paste0("Beobachteter ", statistical_value, " für ", 
+                                   conflict_region_name, " nicht zufällig größer")
+}
+
+p_result <- paste0("p-Wert ≈ ", round(p, 3))
+if (p < 0.05) {
+  if (p < 1*10**-3){
+    p_result <- paste0("p-Wert < 1e-03")
+    }
+  result <- paste0(p_result, " < 0.05 --> Verwerfung der Nullhypothese") 
+} else{
+  result <- paste0(p_result, " > 0.05 --> Beibehaltung der Nullhypothese")
+}
+
+if (length(data2) > 10000){
+  comparing_region <- "Global"
+} else {
+  comparing_region <- "Umland"
+}
+
+lower_bound <- quantile(simDiff, 0.01, na.rm = TRUE)
+upper_bound <- quantile(simDiff, 0.99, na.rm = TRUE)
+
+if (obsDiff < lower_bound){lower_bound <- obsDiff}
+if (obsDiff > upper_bound){upper_bound <- obsDiff}
+
+fill_condition <- simDiff > obsDiff
+if (obsDiff < 0) {
+  fill_condition <- simDiff < obsDiff
+}
+
+ggplot(data.frame(simDiff), aes(x = simDiff)) +
+  geom_histogram(binwidth = (upper_bound - lower_bound) / 50, 
+                 aes(fill = fill_condition, 
+                     y = after_stat(count) / sum(after_stat(count))), 
+                 color = "black") +
+  scale_fill_manual(values = c("FALSE" = "blue", "TRUE" = "yellow")) +
+  xlim(lower_bound, upper_bound) +
+  labs(
+    x = lab_x,
+    y = "Relative Häufigkeit",
+    title = "Permutationstest",
+    subtitle = paste0(statistical_value, ' ', conflict_region_name, " ≈ ", statistical_value_conflict_region, ', ', 
+                      statistical_value, ' ', comparing_region, " ≈ ", statistical_value_comparing_region, 
+                      "\nDifferenz der beobachteten ", statistical_value, "e ≈ ", round(obsDiff, 3), 
+                      "\n\nNullhypothese: ", null_hypothesis,
+                      "\nAlternativhypothese: ", alternative_hypothesis,
+                      "\n\n", result)) +
+  geom_vline(xintercept = obsDiff, col = "red", lty = 2) +
+  annotate("text", x = obsDiff, y = -0.005, label = round(obsDiff, 3), col = "red") + 
+  theme(legend.position = "none")
+```
+
