@@ -7,7 +7,7 @@
  xmlns:bib="http://purl.org/net/biblio#"
  xmlns:foaf="http://xmlns.com/foaf/0.1/"
  xmlns:vcard="http://nwalsh.com/rdf/vCard#">
-    <bib:Article rdf:about="#item_2">
+    <bib:Article rdf:about="#item_1">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -40,7 +40,7 @@
         <dc:description>Number: 14</dc:description>
         <bib:pages>1603-1611</bib:pages>
     </bib:Article>
-    <bib:Article rdf:about="#item_3">
+    <bib:Article rdf:about="#item_2">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -93,7 +93,7 @@
         </dc:identifier>
         <dcterms:dateSubmitted>2025-01-16</dcterms:dateSubmitted>
     </bib:Article>
-    <bib:Article rdf:about="#item_5">
+    <bib:Article rdf:about="#item_4">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -123,7 +123,7 @@
         <dc:date>2019</dc:date>
         <dc:description>Number: 9</dc:description>
     </bib:Article>
-    <bib:Article rdf:about="#item_6">
+    <bib:Article rdf:about="#item_5">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -259,7 +259,7 @@
         </dc:identifier>
         <dcterms:dateSubmitted>2025-01-22</dcterms:dateSubmitted>
     </bib:Document>
-    <bib:Article rdf:about="#item_10">
+    <bib:Article rdf:about="#item_9">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -288,7 +288,7 @@
         <dc:date>02.07.2016</dc:date>
         <bib:pages>74-78</bib:pages>
     </bib:Article>
-    <bib:Book rdf:about="#item_11">
+    <bib:Book rdf:about="#item_10">
         <z:itemType>book</z:itemType>
         <dc:publisher>
             <foaf:Organization>
@@ -337,6 +337,7 @@
                 <rdf:value>https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54616/kaschmir/</rdf:value>
             </dcterms:URI>
         </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-21</dcterms:dateSubmitted>
     </bib:Document>
     <bib:Report rdf:about="https://www.kas.de/de/laenderberichte/detail/-/content/es-brodelt-im-himalaya">
         <z:itemType>report</z:itemType>
@@ -458,6 +459,7 @@
                 <rdf:value>https://www.auswaertiges-amt.de/de/reiseundsicherheit/palaestinensischegebietesicherheit-203674</rdf:value>
             </dcterms:URI>
         </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-16</dcterms:dateSubmitted>
     </rdf:Description>
     <bib:Article rdf:about="https://www.bpb.de/themen/migration-integration/regionalprofile/329090/der-vergessene-konflikt-in-westsahara-und-seine-fluechtlinge/">
         <z:itemType>newspaperArticle</z:itemType>
@@ -485,7 +487,7 @@
         </dc:identifier>
         <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
     </bib:Article>
-    <bib:Article rdf:about="#item_19">
+    <bib:Article rdf:about="#item_18">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -548,10 +550,12 @@
                <rdf:value>https://github.com/r-barnes/dggridR/</rdf:value>
             </dcterms:URI>
         </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-14</dcterms:dateSubmitted>
         <dc:rights>doi:10.5281/zenodo.1322866</dc:rights>
-        <dc:description>Programmers: _:n73</dc:description>
+        <dc:description>Programmers: _:n77
+Programmers: _:n73</dc:description>
     </bib:Data>
-    <bib:Report rdf:about="#item_21">
+    <bib:Report rdf:about="#item_20">
         <z:itemType>report</z:itemType>
         <dc:publisher>
             <foaf:Organization>
@@ -603,7 +607,7 @@
         </dc:identifier>
         <dcterms:dateSubmitted>2025-02-02</dcterms:dateSubmitted>
     </bib:Report>
-    <bib:Article rdf:about="#item_23">
+    <bib:Article rdf:about="#item_22">
         <z:itemType>journalArticle</z:itemType>
         <dcterms:isPartOf>
             <bib:Journal>
@@ -783,416 +787,4 @@
         <prism:number>4</prism:number>
         <dc:identifier>ISSN 2454-8006</dc:identifier>
     </bib:Journal>
-    <rdf:Description rdf:about="https://giscience.course-pages.gistools.geog.uni-heidelberg.de/einfuerung_statistik/">
-        <z:itemType>document</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>Lautenbach</foaf:surname>
-                        <foaf:givenName>Sven</foaf:givenName>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Methoden in der Geographie: Statistik Einführung</dc:title>
-        <dc:date>26.02.2025</dc:date>
-        <z:language>Deutsch</z:language>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://giscience.course-pages.gistools.geog.uni-heidelberg.de/einfuerung_statistik/</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-    </rdf:Description>
-    <bib:Document rdf:about="https://guardianlv.com/2013/11/china-uses-an-army-of-sockpuppets-to-control-public-opinion-and-the-us-will-too/">
-        <z:itemType>webpage</z:itemType>
-        <dcterms:isPartOf>
-           <z:Website></z:Website>
-        </dcterms:isPartOf>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>Elsner</foaf:surname>
-                        <foaf:givenName>K.</foaf:givenName>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>China Uses an Army of Sockpuppets to Control Public Opinion – and the US Will Too</dc:title>
-        <dc:date>27.11.2013</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://guardianlv.com/2013/11/china-uses-an-army-of-sockpuppets-to-control-public-opinion-and-the-us-will-too/</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-    </bib:Document>
-    <rdf:Description rdf:about="https://wiki.bwhpc.de/e/SDS@hd">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>bwHPC Wiki</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>SDS@hd</dc:title>
-        <dc:date>20.12.2024</dc:date>
-        <z:language>Englisch</z:language>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://wiki.bwhpc.de/e/SDS@hd</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-01-20</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://dashboard.ohsome.org">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-            <foaf:Organization>
-                <vcard:adr>
-                    <vcard:Address>
-                       <vcard:locality>Heidelberg</vcard:locality>
-                    </vcard:Address>
-                </vcard:adr>
-            </foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>Heigit gGmbH</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>ohsome Dashboard</dc:title>
-        <dc:date>2025</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://dashboard.ohsome.org</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-02-20</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/export/?flg=en-us">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-            <foaf:Organization>
-               <foaf:name>Open Data Soft</foaf:name>
-            </foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>World Food Programme (UN agency)</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>World Administrative Boundaries - Countries and Territories</dc:title>
-        <dc:date>26.04.2019</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/export/?flg=en-us</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-01-22</dcterms:dateSubmitted>
-        <dc:rights>Open Government Licence v3.0</dc:rights>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://www.python.org/about/">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>Python Software Foundation</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Python</dc:title>
-        <dc:date>2025</dc:date>
-        <z:language>Englisch</z:language>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://www.python.org/about/</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-02-15</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://www.r-project.org/about.html">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>R Foundation</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>R-Project</dc:title>
-        <z:language>Englisch</z:language>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://www.r-project.org/about.html</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-02-22</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://qgis.org/project/overview/">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                   <foaf:Person><foaf:surname>QGIS</foaf:surname></foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>QGIS overview</dc:title>
-        <dc:date>2025</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://qgis.org/project/overview/</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-03-04</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://www.openstreetmap.org/changeset/26258719">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>OpenStreetMap Contributors</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Änderungssatz: 26258719</dc:title>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://www.openstreetmap.org/changeset/26258719</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-03-14</dcterms:dateSubmitted>
-        <dc:description>Identische Quellenangaben für alle anderen zitierte Changesets, nur mit anderer Changeset-Nummer in Titel und URL</dc:description>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://data.europa.eu/data/datasets/basisregistratie-adressen-en-gebouwen-bag-?locale=en">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-            <foaf:Organization>
-               <foaf:name>Publications Office of the European Union</foaf:name>
-            </foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>Europäische Union</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Basic Registration Addresses and Buildings (BAG)</dc:title>
-        <dc:date>12.10.2021</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://data.europa.eu/data/datasets/basisregistratie-adressen-en-gebouwen-bag-?locale=en</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-01-15</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://osmfoundation.org/w/index.php?title=Licence/Historic/We_Are_Changing_The_License&amp;oldid=4141">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-            <foaf:Organization>
-               <foaf:name>OpenStreetMap Foundation</foaf:name>
-            </foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>OpenStreetMap Foundation contributors</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Licence/Historic/We Are Changing The License</dc:title>
-        <dc:date>31.07.2016</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://osmfoundation.org/w/index.php?title=Licence/Historic/We_Are_Changing_The_License&amp;oldid=4141</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://wiki.openstreetmap.org/w/index.php?title=Open_Database_License&amp;oldid=2370184">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-            <foaf:Organization>
-               <foaf:name>OpenStreetMap Wiki</foaf:name>
-            </foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>OpenStreetMap Wiki contributors</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Open Database License</dc:title>
-        <dc:date>10.08.2022</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://wiki.openstreetmap.org/w/index.php?title=Open_Database_License&amp;oldid=2370184</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-02-10</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://wiki.openstreetmap.org/w/index.php?title=Import/Guidelines&amp;oldid=2819054">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-            <foaf:Organization>
-               <foaf:name>OpenStreetMap Wiki</foaf:name>
-            </foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>OpenStreetMap Wiki contributors</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Import/Guidelines</dc:title>
-        <dc:date>03.03.2025</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://wiki.openstreetmap.org/w/index.php?title=Import/Guidelines&amp;oldid=2819054</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://taginfo.openstreetmap.org/keys/route">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>OpenStreetMap Foundation</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Route</dc:title>
-        <dc:date>03.03.2025</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://taginfo.openstreetmap.org/keys/route</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <z:authority>OSM Taginfo</z:authority>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://taginfo.openstreetmap.org/keys/boundary">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                       <foaf:surname>OpenStreetMap Foundation</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>Boundary</dc:title>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://taginfo.openstreetmap.org/keys/boundary</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-03-06</dcterms:dateSubmitted>
-        <z:authority>OSM Taginfo</z:authority>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://www.urz.uni-heidelberg.de/de/service-katalog/hochleistungsrechnen/bwforcluster-helix">
-        <z:itemType>standard</z:itemType>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>Universitätsrechenzentrum Heidelberg</foaf:surname>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>BwForCluster Helix</dc:title>
-        <dc:date>2025</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-                <rdf:value>https://www.urz.uni-heidelberg.de/de/service-katalog/hochleistungsrechnen/bwforcluster-helix</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-01-14</dcterms:dateSubmitted>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://github.com/ManuelKraft/master_thesis">
-        <z:itemType>standard</z:itemType>
-        <dc:publisher>
-           <foaf:Organization><foaf:name>Github</foaf:name></foaf:Organization>
-        </dc:publisher>
-        <bib:authors>
-            <rdf:Seq>
-                <rdf:li>
-                    <foaf:Person>
-                        <foaf:surname>Kraft</foaf:surname>
-                        <foaf:givenName>Manuel</foaf:givenName>
-                    </foaf:Person>
-                </rdf:li>
-            </rdf:Seq>
-        </bib:authors>
-        <dc:title>master_thesis</dc:title>
-        <dc:date>08.04.2025</dc:date>
-        <dc:identifier>
-            <dcterms:URI>
-               <rdf:value>https://github.com/ManuelKraft/master_thesis</rdf:value>
-            </dcterms:URI>
-        </dc:identifier>
-        <dcterms:dateSubmitted>2025-04-08</dcterms:dateSubmitted>
-    </rdf:Description>
-    <z:Collection rdf:about="#collection_2">
-        <dc:title>master_thesis</dc:title>
-        <dcterms:hasPart rdf:resource="#item_2"/>
-        <dcterms:hasPart rdf:resource="#item_3"/>
-        <dcterms:hasPart rdf:resource="https://osteuropa.lpb-bw.de/bergkarabach-konflikt"/>
-        <dcterms:hasPart rdf:resource="#item_5"/>
-        <dcterms:hasPart rdf:resource="#item_6"/>
-        <dcterms:hasPart rdf:resource="https://www.openstreetmap.org/copyright/en"/>
-        <dcterms:hasPart rdf:resource="https://link.springer.com/article/10.1007/s10588-023-09383-6"/>
-        <dcterms:hasPart rdf:resource="https://www.openstreetmap.org/communities"/>
-        <dcterms:hasPart rdf:resource="#item_10"/>
-        <dcterms:hasPart rdf:resource="#item_11"/>
-        <dcterms:hasPart rdf:resource="https://www.bpb.de/themen/kriege-konflikte/dossier-kriege-konflikte/54616/kaschmir/"/>
-        <dcterms:hasPart rdf:resource="https://www.kas.de/de/laenderberichte/detail/-/content/es-brodelt-im-himalaya"/>
-        <dcterms:hasPart rdf:resource="https://www.ipg-journal.de/regionen/asien/artikel/endloser-gipfelkampf-6603/"/>
-        <dcterms:hasPart rdf:resource="https://www.rnd.de/politik/was-ist-das-westjordanland-wem-gehoert-es-und-was-hat-es-mit-dem-nahostkonflikt-zu-tun-S6TZH3OKFVFCTNUICKFYP3IXJQ.html"/>
-        <dcterms:hasPart rdf:resource="https://www.tagesschau.de/ausland/asien/israel-westjordanland-122.html"/>
-        <dcterms:hasPart rdf:resource="https://www.auswaertiges-amt.de/de/reiseundsicherheit/palaestinensischegebietesicherheit-203674"/>
-        <dcterms:hasPart rdf:resource="https://www.bpb.de/themen/migration-integration/regionalprofile/329090/der-vergessene-konflikt-in-westsahara-und-seine-fluechtlinge/"/>
-        <dcterms:hasPart rdf:resource="#item_19"/>
-        <dcterms:hasPart rdf:resource="https://github.com/r-barnes/dggridR/"/>
-        <dcterms:hasPart rdf:resource="#item_21"/>
-        <dcterms:hasPart rdf:resource="http://www.rms.nsw.gov.au/documents/projects/key-build-programs/alpha-numeric/nsw-factsheet.pdf"/>
-        <dcterms:hasPart rdf:resource="#item_23"/>
-        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Map_features&amp;oldid=2804789"/>
-        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Changelog&amp;oldid=2778521"/>
-        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Key:addr:*&amp;oldid=2795834"/>
-        <dcterms:hasPart rdf:resource="https://wiki.openstreetmap.org/w/index.php?title=Relation&amp;oldid=2773710"/>
-        <dcterms:hasPart rdf:resource="https://shapely.readthedocs.io/en/stable/reference/shapely.hausdorff_distance.html"/>
-        <dcterms:hasPart rdf:resource="https://ijasre.net/index.php/ijasre/article/view/831/1567"/>
-    </z:Collection>
 </rdf:RDF>
