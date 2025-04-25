@@ -3,8 +3,8 @@ import geopandas as gpd
 import pandas as pd
 
 reason = "local_highlights"
-region = "australia"
-key = "all_keys"
+region = "lettland"
+key = "boundaries"
 
 deletions: pd.DataFrame = pd.read_csv(f"../results/object_differences/data/{reason}/{region}/{key}.csv")
 deletions.valid_from = pd.to_datetime(deletions.valid_from, utc=True)
@@ -38,7 +38,7 @@ df.to_csv(f"../results/object_differences/data/{reason}/{region}/deletion_visibl
 
 shift = pd.Timedelta(days=10) 
 min_timestamp = "2009-01-01"
-max_timestamp = "2018-01-01"
+max_timestamp = "2022-01-01"
 df = df[(df.timestamp > min_timestamp) & (df.timestamp < max_timestamp)]
 width = 20
 
@@ -63,5 +63,5 @@ plt.legend(loc="upper left", bbox_to_anchor=(0, 1))
 plt.xlim(pd.Timestamp(min_timestamp), pd.Timestamp(max_timestamp))
 plt.title(f"Sichtbare vs. Gelöschte Objekte", fontdict={"fontsize": 16}, pad=30)
 plt.subplots_adjust(top=0.85)
-plt.text(0.5, 0.875, "Australische Highways mit besonders vielen Löschungen", fontsize=12,  ha="center", transform=plt.gcf().transFigure)
+plt.text(0.5, 0.875, "Grenzen in Lettland", fontsize=12,  ha="center", transform=plt.gcf().transFigure)
 plt.savefig(f"../results/object_differences/images/{reason}/{region}/deletion_visible_time_series_subset.png")
